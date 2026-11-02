@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avanesov Academy — барбершоп в Балашове</title>
+<meta name="description" content="Барбершоп Avanesov Academy в Балашове: мужские и детские стрижки, стрижка с бородой. Ул. Карла Маркса, 5. Запись по телефону и в WhatsApp.">
+<style>
+:root{--bg:#141210;--bg2:#1d1a17;--tx:#f1ebe2;--mut:#a89f92;--ac:#c8a45c;--ln:#2e2a25}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--tx);font:17px/1.6 Georgia,"Times New Roman",serif}
+a{color:inherit}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.btn,.tag{font-family:"Trebuchet MS",Arial,sans-serif}
+header{position:sticky;top:0;background:rgba(20,18,16,.94);border-bottom:1px solid var(--ln);z-index:5}
+header .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Trebuchet MS",Arial,sans-serif;font-weight:700;letter-spacing:.04em;text-decoration:none}
+.logo img{width:34px;height:34px;border-radius:50%;object-fit:cover}
+.btn{display:inline-block;background:var(--ac);color:#17130d;padding:12px 22px;border-radius:4px;font-weight:700;text-decoration:none;font-size:15px}
+.btn.o{background:none;border:1px solid var(--ac);color:var(--ac)}
+.hero{padding:56px 0 40px}
+.hero .w{display:grid;grid-template-columns:1.05fr 1fr;gap:36px;align-items:center}
+.tag{color:var(--ac);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(32px,5vw,50px);line-height:1.1;margin:12px 0 18px}
+.hero p{color:var(--mut);max-width:46ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero img{width:100%;height:440px;object-fit:cover;border-radius:6px;display:block;background:var(--bg2)}
+.facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:26px;font-family:"Trebuchet MS",Arial,sans-serif;font-size:14px;color:var(--mut)}
+.facts b{display:block;color:var(--tx);font-size:20px}
+section{padding:54px 0;border-top:1px solid var(--ln)}
+h2{font-size:28px;margin-bottom:26px}
+.srv{display:grid;gap:14px}
+.s{background:var(--bg2);border:1px solid var(--ln);border-radius:6px;padding:20px 22px;display:grid;grid-template-columns:1fr auto;gap:6px 20px}
+.s h3{font-size:19px}
+.s .p{color:var(--ac);font-family:"Trebuchet MS",Arial,sans-serif;font-weight:700;text-align:right;white-space:nowrap}
+.s p{color:var(--mut);font-size:15px;grid-column:1/-1}
+.note{color:var(--mut);font-size:14px;margin-top:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.two img{width:100%;height:380px;object-fit:cover;border-radius:6px;background:var(--bg2)}
+.two p{color:var(--mut);margin-bottom:14px}
+.ul{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;margin-top:6px;font-size:15px}
+.ul li:before{content:"— ";color:var(--ac)}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.r{background:var(--bg2);border:1px solid var(--ln);border-radius:6px;padding:20px;font-size:15px;color:var(--mut)}
+.r span{display:block;margin-top:12px;font-size:12px;color:var(--ac);font-family:"Trebuchet MS",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.rate{display:flex;gap:18px;align-items:baseline;margin-bottom:22px;font-family:"Trebuchet MS",Arial,sans-serif}
+.rate b{font-size:44px;color:var(--ac)}
+.rate span{color:var(--mut);font-size:15px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.contact p{margin-bottom:10px}
+.contact small{color:var(--mut)}
+.big{font-family:"Trebuchet MS",Arial,sans-serif;font-size:26px;font-weight:700;text-decoration:none}
+footer{padding:26px 0;border-top:1px solid var(--ln);color:var(--mut);font-size:13px;font-family:"Trebuchet MS",Arial,sans-serif}
+@media(max-width:760px){.hero .w,.two,.contact{grid-template-columns:1fr}.hero img{height:300px}.rv{grid-template-columns:1fr}.two img{height:280px}.logo span{display:none}}
+
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+header{transition:box-shadow .3s,background .3s}
+header.sc{box-shadow:0 6px 24px rgba(0,0,0,.45)}
+.btn{transition:transform .25s ease,background .25s,color .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(200,164,92,.25)}
+.btn.o:hover{background:var(--ac);color:#17130d}
+.btn:active{transform:translateY(0)}
+.s{transition:transform .3s ease,border-color .3s,background .3s}
+.s:hover{transform:translateY(-3px);border-color:var(--ac)}
+.r{transition:transform .3s,border-color .3s}.r:hover{transform:translateY(-3px);border-color:var(--ac)}
+.hero img,.two img{transition:transform .8s ease,opacity .8s ease;opacity:0}
+.hero img.ld,.two img.ld{opacity:1}
+.two img:hover,.hero img:hover{transform:scale(1.015)}
+.more{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .6s cubic-bezier(.4,0,.2,1),opacity .5s ease}
+.more.open{grid-template-rows:1fr;opacity:1}
+.more-in{overflow:hidden;min-height:0}
+.toggle{margin-top:18px;background:none;cursor:pointer;font-size:15px;font-family:"Trebuchet MS",Arial,sans-serif;border:1px solid var(--ac)}
+.toggle:after{content:"";display:inline-block;width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);margin-left:10px;transition:transform .4s}
+.toggle[aria-expanded=true]:after{transform:rotate(-135deg) translateY(-2px)}
+.rv0{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv0.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.rv0{opacity:1;transform:none}.hero img,.two img{opacity:1}.more{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="w">
+<a class="logo" href="#top"><img src="https://avatars.mds.yandex.net/get-altay/20933263/2a000001a0e7864480deeaf14ac2a1848c96/S" alt=""><span>AVANESOV ACADEMY</span></a>
+<a class="btn" href="tel:+79950385958">Записаться</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="w">
+<div>
+<div class="tag">Барбершоп · Балашов</div>
+<h1>Стрижка, после которой не хочется смотреть на часы</h1>
+<p>Мужские и детские стрижки, стрижка с бородой. Работаем по записи, поэтому без очередей и суеты. Чай и кофе — пока ждёте.</p>
+<div class="cta">
+<a class="btn" href="tel:+79950385958">Позвонить</a>
+<a class="btn o" href="https://wa.me/79950385958">Написать в WhatsApp</a>
+</div>
+<div class="facts">
+<div><b>4,8</b>рейтинг на Яндекс Картах</div>
+<div><b>51</b>оценка</div>
+<div><b>2026</b>«Хорошее место»</div>
+</div>
+</div>
+<img src="https://avatars.mds.yandex.net/get-altay/16319048/2a0000019aafd589aeacddea231b7518e397/XXL_height" alt="Барбершоп Avanesov Academy, Балашов">
+</div></div>
+
+<section id="price"><div class="w">
+<h2>Услуги и цены</h2>
+<div class="srv">
+<div class="s"><h3>Мужская стрижка</h3><div class="p">1000 ₽ · 1 час</div><p>Мытьё головы, сушка и укладка разными средствами входят в стоимость.</p></div>
+<div class="s"><h3>Детская стрижка (от 9 лет)</h3><div class="p">1000 ₽ · 1 час</div><p>Подберём стрижку, помоем голову, острижём, уложим и подскажем, как ухаживать за волосами.</p></div>
+<div class="s"><h3>Стрижка + борода</h3><div class="p">1500 ₽ · 1,5 часа</div><p>Подбор формы бороды и стрижки, мытьё головы, форма и чёткие контуры машинкой, отпаривание, массаж лица, бритьё опасной бритвой, укладка и советы по уходу.</p></div>
+</div>
+<div class="more" id="more"><div class="more-in"><div class="srv" style="padding-top:14px">
+<div class="s"><h3>Стрижка «Отец + сын» (до 12 лет)</h3><div class="p">1600 ₽ · 2 часа</div><p>Две стрижки за один визит. В услугу входит подбор стрижки и мытьё головы.</p></div>
+<div class="s"><h3>Моделирование бороды и усов</h3><div class="p">800 ₽ · 40 минут</div><p>Подберём стиль и создадим форму бороды или усов.</p></div>
+<div class="s"><h3>Камуфляж седины</h3><div class="p">500 ₽ · 30 минут</div><p>Процедура помогает спрятать седину.</p></div>
+<div class="s"><h3>Укладка волос</h3><div class="p">500 ₽ · 20 минут</div><p>Мытьё головы, сушка и укладка разными средствами.</p></div>
+<div class="s"><h3>Воск (уши + нос)</h3><div class="p">400 ₽ · 15 минут</div><p>Депиляция воском ушей и носа.</p></div>
+<div class="s"><h3>Окантовка</h3><div class="p">200 ₽ · 15 минут</div></div>
+</div></div></div>
+<button class="btn o toggle" id="tg" aria-expanded="false" aria-controls="more">Показать все услуги (9)</button>
+<p class="note">Также в карточке заведения указаны тонирование, окрашивание и мелирование — цены уточняйте по телефону.</p>
+</div></section>
+
+<section><div class="w two">
+<img src="https://avatars.mds.yandex.net/get-altay/16330083/2a0000019aafda82d9b71f89afec5940f9f9/XXL_height" alt="Интерьер барбершопа Avanesov Academy">
+<div>
+<h2>Что здесь по-другому</h2>
+<p>Гости чаще всего пишут про три вещи: спокойную атмосферу, аккуратную работу мастеров и чистоту. Один из посетителей отдельно заметил, что инструменты дезинфицируют после каждого клиента.</p>
+<ul class="ul">
+<li>Предварительная запись</li>
+<li>Парковка</li>
+<li>Wi-Fi</li>
+<li>Чай и кофе</li>
+<li>Наличные и перевод</li>
+<li>СБП и предоплата</li>
+</ul>
+<p class="note">С животными нельзя. Доступа для инвалидных колясок нет.</p>
+</div>
+</div></section>
+
+<section id="reviews"><div class="w">
+<h2>Что говорят гости</h2>
+<div class="rate"><b>4,8</b><span>36 отзывов на Яндекс Картах · лучше всего оценивают персонал, барберов и атмосферу</span></div>
+<div class="rv">
+<div class="r">Пришли впервые с сыном. Мастер внимательный, всё прошло быстро и легко, в зале уютно, музыка приятная, очередей нет. Сын доволен результатом.<span>Отзыв, март</span></div>
+<div class="r">Ходит сюда с сыном почти с открытия. Мастера порядочные, с юмором, подсказывают подходящий вариант, а чай и кофе подают сразу.<span>Отзыв, март</span></div>
+<div class="r">Записался за день на стрижку и коррекцию бороды. Работали аккуратно и безболезненно, в помещении чисто, приборы обрабатывают после каждого клиента.<span>Отзыв, декабрь 2024</span></div>
+</div>
+</div></section>
+
+<section id="contacts"><div class="w contact">
+<div>
+<h2>Как записаться</h2>
+<p><a class="big" href="tel:+79950385958">+7 (995) 038-59-58</a></p>
+<p><small>Если не ответили на звонок, администратор перезвонит сам.</small></p>
+<div class="cta">
+<a class="btn" href="https://wa.me/79950385958">WhatsApp</a>
+<a class="btn o" href="https://vk.ru/avanesov_academy">ВКонтакте</a>
+</div>
+</div>
+<div>
+<h2>Где мы</h2>
+<p>Балашов, ул. Карла Маркса, 5</p>
+<p><small>Остановка «Почта» — в 85 метрах.</small></p>
+<p><small>График работы уточняйте по телефону: в праздники он может меняться.</small></p>
+<div class="cta"><a class="btn o" href="https://yandex.ru/maps/org/avanesov_academy/152622635761/">Открыть на Яндекс Картах</a></div>
+</div>
+</div></section>
+</main>
+<footer><div class="w">© Avanesov Academy, Балашов. Демо-страница по данным Яндекс Карт.</div></footer>
+<script>
+(function(){
+var h=document.querySelector("header");
+function sc(){h.classList.toggle("sc",window.scrollY>10)}
+addEventListener("scroll",sc,{passive:true});sc();
+var tg=document.getElementById("tg"),m=document.getElementById("more");
+tg.addEventListener("click",function(){
+ var o=m.classList.toggle("open");
+ tg.setAttribute("aria-expanded",o);
+ tg.firstChild.nodeValue=o?"Свернуть":"Показать все услуги (9)";
+});
+document.querySelectorAll("img").forEach(function(i){
+ if(i.complete)i.classList.add("ld");else{i.addEventListener("load",function(){i.classList.add("ld")});i.addEventListener("error",function(){i.classList.add("ld")})}
+});
+var els=document.querySelectorAll("section .w > *, .hero .w > *");
+els.forEach(function(e){e.classList.add("rv0")});
+if("IntersectionObserver" in window){
+ var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});
+ els.forEach(function(e,i){e.style.transitionDelay=(i%4)*70+"ms";io.observe(e)});
+}else els.forEach(function(e){e.classList.add("in")});
+})();
+</script>
+</body>
+</html>
